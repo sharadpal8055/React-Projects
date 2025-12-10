@@ -1,0 +1,79 @@
+/* ---------- LIST GROUP ---------- */
+.listGroup {
+  list-style: none;
+  padding: 12px;
+  margin: 0 0 12px 0;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.listGroupItem {
+  padding: 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+  flex: 1;
+}
+
+/* Hover on text */
+.listGroupItem:hover {
+  color: #444;
+  transform: translateX(3px);
+  transition: 0.2s;
+}
+
+/* Remove border for last element (if multiple) */
+.listGroupItem:last-child {
+  border-bottom: none;
+}
+
+/* Click effect */
+.listGroupItem:active {
+  background-color: #ececec;
+}
+
+/* ---------- BUTTON STYLING ---------- */
+.buyButton {
+  background-color: #28a745;       /* Bootstrap green */
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* Hover effect */
+.buyButton:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+  box-shadow: 0 2px 6px rgba(0, 150, 50, 0.3);
+}
+
+/* Click animation */
+.buyButton:active {
+  transform: scale(0.95);
+}
+
+/* ---------- ANIMATION ---------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.activeItem {
+  background-color: #d1ffd6; /* light green background */
+  border-left: 6px solid #28a745;
+  transition: 0.3s ease;
+}
