@@ -1,0 +1,138 @@
+#sideContainer{
+  display: flex;
+  min-height: 800px;
+}
+#hfcontainer{
+  width: 100%;
+}
+/* Card Wrapper */
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 48px;
+  padding: 20px;
+  justify-content: center;
+}
+.post-card {
+  display: flex;
+  justify-content: center;
+}
+
+/* Card Styling */
+.post-card .card {
+  display: flex;
+  margin-top: 15px;
+ margin-bottom: 23px;
+  gap: 30px;
+  width: 100%;
+  max-width: 42rem;
+  border: none;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+
+.post-card .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+}
+
+/* Image */
+.post-card .card-img-top {
+  height: 180px;
+  object-fit: cover;
+  background: #e5e7eb; /* placeholder background */
+}
+
+/* Body */
+.post-card .card-body {
+  padding: 16px;
+}
+
+/* Title */
+.post-card .card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Description */
+.post-card .card-text {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+/* Reaction Button */
+.post-card .btn-primary {
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+/* Tags Container */
+.post-card .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+
+
+
+/* Tag Badge */
+.post-card .badge {
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background-color: #eef2ff;
+  color: #3730a3;
+}
+/* Notification badge */
+.notification-badge {
+  position: absolute;
+  top: -6px;
+  right: -16px;
+
+  min-width: 32px;
+  height: 20px;
+  padding: 0 6px;
+
+  background: linear-gradient(135deg, #ff4d4d, #ff1a1a);
+  color: #fff;
+
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+
+  border-radius: 999px;
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.4);
+
+  animation: pulse 1.8s infinite;
+}
+
+/* Subtle pulse animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 77, 77, 0.6);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 8px rgba(255, 77, 77, 0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+ .formcontainer{
+  width: 80%;
+  margin-top: 15px;
+  margin-left: 10%;
+ }
