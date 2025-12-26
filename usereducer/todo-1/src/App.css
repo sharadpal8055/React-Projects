@@ -1,0 +1,146 @@
+body {
+  background: #f4f6f9;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Header Style ===== */
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 40px;
+  font-weight: 600;
+  color: #2d3436;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+/* ----- Input Row Wrapper ----- */
+.input {
+  margin: 30px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 700px;
+}
+
+/* ----- Text Input + Date Input ----- */
+.input input[type="text"],
+.input input[type="date"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 2px solid #dcdde1;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input input[type="text"]:focus,
+.input input[type="date"]:focus {
+  border-color: #0984e3;
+  box-shadow: 0 0 8px rgba(9, 132, 227, 0.4);
+}
+
+/* ----- Add Button ----- */
+.input .btn-success {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.input .btn-success:hover {
+  transform: scale(1.05);
+}
+
+/* ----- Placeholder Styling ----- */
+.input input::placeholder {
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 576px) {
+  .input {
+    padding: 15px;
+  }
+
+  .input input,
+  .input button {
+    font-size: 14px;
+  }
+}
+
+
+/* List Container */
+.list-group {
+  width: 90%;
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 0;
+}
+
+/* Each List Item */
+.list-group-item {
+  background: #ffffff;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  padding: 15px 20px;
+  font-size: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* Hover animation */
+.list-group-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Task text */
+.list-group-item span:first-child {
+  font-weight: 500;
+}
+
+/* Date Badge */
+.list-group-item .badge {
+  font-size: 14px;
+  padding: 8px 12px;
+}
+
+/* Delete Button */
+.list-group-item .btn-danger {
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: 0.2s ease;
+}
+
+/* Delete Hover Effect */
+.list-group-item .btn-danger:hover {
+  transform: scale(1.10);
+  background-color: #c0392b;
+}
+
+/* Responsive Styling */
+@media (max-width: 576px) {
+  .list-group-item {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+  
+  .badge {
+    font-size: 12px !important;
+  }
+  
+  .btn-danger {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}

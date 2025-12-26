@@ -1,0 +1,29 @@
+.heading {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 20px 0;
+
+  /* Gradient Text */
+  background: linear-gradient(90deg, #005eff, #00bfff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Subtle Glow */
+  text-shadow: 2px 2px 10px rgba(0, 120, 255, 0.25);
+
+  /* Smooth Entry Animation */
+  animation: fadeSlide 0.8s ease-out forwards;
+}
+
+/* Animation */
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

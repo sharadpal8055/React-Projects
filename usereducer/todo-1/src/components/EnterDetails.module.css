@@ -1,0 +1,77 @@
+.inputRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px;
+  background: #f7f9fc;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+  transition: 0.3s ease;
+}
+
+.inputRow:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Text Input */
+.textInput {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 1rem;
+  border: 2px solid #d0d7e2;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.textInput:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Date Input */
+.dateInput {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 1rem;
+  border: 2px solid #d0d7e2;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.dateInput:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 8px rgba(40, 167, 69, 0.3);
+}
+
+/* Add Button */
+.addButton {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1rem;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.addButton:hover {
+  background: #218838;
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .inputRow {
+    flex-direction: column;
+  }
+
+  .addButton {
+    width: 100%;
+  }
+}
